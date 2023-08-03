@@ -15,17 +15,17 @@ export const filterEven=(...arr)=>
     arr.forEach(i=>{
         if(i%2==0)
         {
-            ans.push(ele);
+            li.push(i);
         }
     });
-    return ans;
+    return li;
 }
 export const generateRandomList=(n=7)=>
 {
-    let res=[];
+    let arr=[];
     for(let i=0;i<n;i++)
     {
-        res.push(Math.floor(Math.random()*100));
+        arr.push(Math.floor(Math.random()*100));
     }
-    return res;
+    return arr;
 }
