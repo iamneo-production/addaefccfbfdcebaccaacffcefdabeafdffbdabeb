@@ -9,7 +9,7 @@ export const filterEven=(...arr)=>
     return li;
 }
 
-export const filterOdd(...arr)=>
+export const filterOdd=(...arr)=>
 {
     let li = [];
     arr.forEach(i=>
@@ -19,3 +19,13 @@ export const filterOdd(...arr)=>
         });
     return li;
 }
+
+export const generateRandomList=(n)=>
+{
+    let ran = [];
+    for (let i=0;i<n;i++)
+    ran.push(Math.floor(Math.random()*100));
+    
+    return ran;
+}
+
